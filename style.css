@@ -24,6 +24,7 @@ body {
     background-color: hsl(216, 50%, 16%);
     padding: 25px;
     border-radius: 12px;
+    box-shadow: 0 40px 0 15px #0c1729, 0 40px 0 50px #0c192c;
 }
 
 .card__img {
