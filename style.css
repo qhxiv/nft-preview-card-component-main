@@ -18,15 +18,9 @@ body {
     justify-content: center;
 }
 
-.container {
-    max-width: calc(100% - 55px);
-    background-color: #0c1729;
-    padding: 25px;
-    border-radius: 24px;
-}
-
 .card {
-    max-width: 350px;
+    width: 350px;
+    max-width: calc(100% - 55px);
     background-color: hsl(216, 50%, 16%);
     padding: 25px;
     border-radius: 12px;
