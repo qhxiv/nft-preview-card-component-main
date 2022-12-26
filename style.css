@@ -18,9 +18,15 @@ body {
     justify-content: center;
 }
 
-.card {
-    width: 350px;
+.container {
     max-width: calc(100% - 55px);
+    background-color: #0c1729;
+    padding: 25px;
+    border-radius: 24px;
+}
+
+.card {
+    max-width: 350px;
     background-color: hsl(216, 50%, 16%);
     padding: 25px;
     border-radius: 12px;
@@ -33,29 +39,30 @@ body {
     justify-content: center;
 }
 
-.card__img:hover .card__cover,
-.card__img:hover svg  {
-    display: block;
-    cursor: pointer;
-}
-
 .card__cover {
-    display: none;
     position: absolute;
     z-index: 1;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: hsl(215, 51%, 70%);
-    opacity: 0.65;
+    background-color: rgba(107, 174, 186, 0.6);
+    opacity: 0;
     border-radius: 6px;
+    transition: opacity 0.3s;
 }
 
 .card__img svg {
-    display: none;
+    opacity: 0;
     position: absolute;
     z-index: 2;
+    transition: opacity 0.3s;
+}
+
+.card__img:hover .card__cover,
+.card__img:hover svg {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .card__picture {
@@ -70,9 +77,11 @@ body {
 }
 
 .card__id {
+    display: inline;
     font-size: 22px;
     font-weight: 600;
     color: hsl(0, 0%, 100%);
+    transition: color 0.3s;
 }
 
 .card__id:hover {
@@ -133,6 +142,7 @@ body {
 
 .card__author span {
     color: hsl(0, 0%, 100%);
+    transition: color 0.3s;
 }
 
 .card__author span:hover {
